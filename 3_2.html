@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	/*styling a icon as button*/
+	input#search{
+    background:url(search-icon.png);
+    background-repeat: no-repeat;
+    width:40px;
+    height:40px;
+}
+
+/*smaller caps font for rest of word in word press*/
+span.font-rest-of-word{
+	
+	font-family: Times New Roman;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+/*bigger caps font for 1st letter of words in Word Press*/
+span.first-letter-of-word{
+	
+	font-family: Times New Roman;
+	font-size: 62px;
+	font-weight: bold;
+}
+
+/*Rest of body other than Word Press*/
+p{
+
+	font-family: Times New Roman;
+	font-size: 22px;
+}
+
+#txtbox{
+
+	height: 30px; /*text box near button*/
+}
+</style>
+</head>
+<body>
+<p id="first">
+	<img src="wordpress-icon.png"><span class="first-letter-of-word" style="color: blue;">W<span class="font-rest-of-word" style="color: blue;">ORD</span><span class="first-letter-of-word" style="color:black;">P</span><span class="font-rest-of-word" style="color: black">RESS</span>
+</p>
+<p>
+Upload a theme <input type="file" name="datafile" size="40"><!--The Browse button to upload file-->
+</p>
+<p>
+Or  search in wordpress&nbsp;<input type="text" id="txtbox">&nbsp;<input type="button" id="search" name="submit" alt="search" >
+</p>
+</body>
+</html>
